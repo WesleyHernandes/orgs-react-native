@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, StyleSheet } from "react-native";
+import { SafeAreaView, StyleSheet, StatusBar } from "react-native";
 import Home from "./src/telas/Home";
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
 const estilos = StyleSheet.create({
   tela: {
     flex: 1,
+    marginTop: StatusBar.currentHeight,
   },
 });
 
